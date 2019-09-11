@@ -1,3 +1,5 @@
+Date: 11-sep-2019
+author: Ivan Dario Lasso Gil(1204)
 Scripts: 
 	0-current_working_directory:script that prints the absolute path name of the current working directory
 	1-listit:Display the contents list of your current directory
@@ -31,7 +33,8 @@ Scripts:
 		to the parent of the working directory, but only copy files that did not 
 		exist in the parent of the working directory or were newer than the versions 
 		in the parent of the working directory
-	15-lets_move
-	16-clean_emacs
-	17-tree          
-	18-commas
+	15-lets_move:script that moves all files beginning with an uppercase letter to the directory /tmp/u
+	16-clean_emacs: script that deletes all files in the current working directory that end with the character ~.
+	17-tree :Create a script that creates the directories welcome/, welcome/to/ and welcome/to/holberton 
+		 in the current directory
+	18-commas:command that lists all the files and directories of the current directory, separated by commas 
