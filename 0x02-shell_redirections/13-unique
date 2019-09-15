@@ -1,3 +1,2 @@
 #!/bin/bash
-#cat list|uniq|grep "[CG][+o]+" 
 sort|uniq|grep -e "^C$" -e "C++" -e "Go"
