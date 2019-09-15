@@ -1,2 +1,2 @@
 #!/bin/bash
-sort|uniq|grep -e "^C$" -e "C++" -e "Go"
+sort|uniq|grep -e "^C$" -e "C++" -e "Go"|sort
