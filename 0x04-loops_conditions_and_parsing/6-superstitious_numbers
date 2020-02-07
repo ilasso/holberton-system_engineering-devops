@@ -3,11 +3,14 @@
 i=1;
 while [ $i -gt 0 -a $i -lt 21 ];do
 	case $i in
-		5) echo "bad luck from china";echo $i
+		5) echo "bad luck from China"
+		echo $i
 		;;
-		10) echo "bad luck from japan";echo $i
+		10) echo "bad luck from Japan"
+		echo $i
 		;;
-		18) echo "bad luck from italy";echo $i
+		18) echo "bad luck from Italy"
+		echo $i
 		;;
 		*) echo $i;
 		;;
