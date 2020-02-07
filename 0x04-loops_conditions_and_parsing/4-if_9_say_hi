@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#prints "Holberton School" string 10 times 9th iteration prints "Hi"
+i=0;
+while [[ $i -ne 11 ]];do
+	if [ $i -eq 9 ] ; then
+		echo "Hi";
+		i=$((i+1));
+		continue;
+	fi
+	echo "Holberton School";
+i=$((i+1));
+done

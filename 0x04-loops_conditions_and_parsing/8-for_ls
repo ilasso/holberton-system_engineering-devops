@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#shows te content of currdir with names after dash char
+LISTA="$(ls -1)"
+for i in $LISTA; do
+	echo "$i"|cut -d "-" -f2 
+done
+

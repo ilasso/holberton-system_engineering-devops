@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#prints "Holberton School" string 10 times using while
+i=0;
+while [[ $i -ne 10 ]];do
+	echo "Holberton School";
+i=$((i+1));
+done
