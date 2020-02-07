@@ -7,12 +7,12 @@ while [ $i -gt 0 -a $i -lt 11 ];do
 		echo "bad luck";
 		i=$((i+1));
 		continue;
-	fi
-	if [ $i -eq 8 ] ; then
+	elif [ $i -eq 8 ] ; then
 		echo "good luck";
 		i=$((i+1));
 		continue;
+	else	
+		echo "Holberton School";
 	fi
-	echo "Holberton School";
 i=$((i+1));
 done
