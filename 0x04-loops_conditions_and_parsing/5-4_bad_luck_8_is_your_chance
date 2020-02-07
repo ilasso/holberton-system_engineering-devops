@@ -9,7 +9,7 @@ while [ $i -gt 0 -a $i -lt 11 ];do
 		continue;
 	fi
 	if [ $i -eq 8 ] ; then
-		echo "goodluck";
+		echo "good luck";
 		i=$((i+1));
 		continue;
 	fi
