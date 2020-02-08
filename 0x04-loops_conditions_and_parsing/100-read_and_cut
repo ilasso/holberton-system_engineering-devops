@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#prints user,userid and home dir of /et/passwd
+while read -r row
+do
+	echo "$row"|cut -d ":" -f1,3,6
+done < /etc/passwd
