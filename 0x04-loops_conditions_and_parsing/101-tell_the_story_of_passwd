@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#prints phrase parsing /etc/passwd
+IFS=":"
+while read -r user key userid groupid user2 home shell 
+do
+echo "The user $user is part of the $groupid gang, lives in $home and rides $shell. $userid place is protected by the passcode $key, more info about the user here: $user2"
+done < /etc/passwd
