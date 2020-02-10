@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#prints all process in a user-oriented format 
+ps xufa

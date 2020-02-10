@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#script that show all bash process single way
+pgrep -l bash
