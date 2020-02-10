@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#script that displays To infinity and beyond indefinitely.
+echo $$ > /var/run/holbertonscript.pid
+x=1
+while [ $x -le 2 ];do
+	echo "To infinity and beyond"
+	sleep 2
+	trap "echo I hate the kill command;exit" SIGTERM
+	trap "echo Y U no love me?!" SIGINT
+	trap "sudo rm /var/run/holbertonscript.pid;exit" SIGQUIT
+done
