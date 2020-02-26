@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# print ipv4 ipaddress
+ifconfig|awk -F: '$1=="          inet addr" {print $2}'|cut -d" " -f1
