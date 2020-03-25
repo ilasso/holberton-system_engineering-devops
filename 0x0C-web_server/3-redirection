@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# redirect_me page and restart nginx server
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School for the win!" > /var/www/html/index.html
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.cpy
+sed -i "37i\ \n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n" /etc/nginx/sites-available/default
+service nginx restart
