@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install nginx web server and creates a 404 error page
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+sed -i "/listen 80 default_server/a error_page 404 /404.html;\nlocation = /404.html {\nroot /var/www/html;\n}" /etc/nginx/sites-available/default
+service nginx restart
