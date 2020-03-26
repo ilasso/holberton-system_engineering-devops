@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# web debugg apache web server
+sed -i "/<VirtualHost \*:80>/i \listen 8080" /etc/apache2/sites-available/000-default.conf
+sed -i "s/<VirtualHost \*:80>/<VirtualHost \*:80 \*:8080>/" /etc/apache2/sites-available/000-default.conf
+service apache2 restart
