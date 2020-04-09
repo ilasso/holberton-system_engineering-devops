@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures NGINX to run as user nginx instead of root
+
+pkill nginx
+sudo sed -i 's/www-data;/nginx;/g' /etc/nginx/nginx.conf
+sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
+sudo service nginx start
