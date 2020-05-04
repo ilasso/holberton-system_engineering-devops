@@ -26,8 +26,8 @@ if __name__ == '__main__':
             completed.append(i.get('title'))
             Qdone = Qdone + 1
         Qtotal = Qtotal + 1
-    emplheader = "Employee {} is done with task {}/{}:".format(username,
-                                                               Qdone, Qtotal)
+    emplheader = "Employee {} is done with task ({}/{}):".format(username,
+                                                                 Qdone, Qtotal)
     print(emplheader)
     display = "\t " + "\n\t ".join(completed)
     print(display)
