@@ -18,7 +18,7 @@ def recurse(subreddit, hot_list=[], after=''):
     if req.ok:
         for i in req.json().get('data').get('children'):
             hot_list.append(i.get('data').get('title'))
-        after = req.json().get('after')
+        after = req.json().get('data').get('after')
         if after:
             return recurse(subreddit, hot_list, after)
         return hot_list
