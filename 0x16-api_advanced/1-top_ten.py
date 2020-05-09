@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module 0-subs.py
-Get subreddit subscribers
+Module 1-top_ten
+Get subreddit 10 hot post
 """
 
 import requests
