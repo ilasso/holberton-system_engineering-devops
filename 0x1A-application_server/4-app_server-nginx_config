@@ -17,6 +17,10 @@ server {
         proxy_pass http://0.0.0.0:5001/number_odd_or_even;
     }
 
+    location /api/ {
+        proxy_pass http://0.0.0.0:5002/api/;
+    }
+
     error_page 404 /404.html;
     location = /404.html {
         internal;
