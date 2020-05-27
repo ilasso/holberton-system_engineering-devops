@@ -1,6 +1,7 @@
 server {
     listen 80;
     listen [::]:80 default_server;
+    server_name 35.231.101.65;
     root   /var/www/html;
     index index.html index.htm index.nginx-debian.html;
     location /redirect_me {
